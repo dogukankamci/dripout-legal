@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DripOut Privacy Policy</title>
+  <meta name="description" content="How the DripOut iOS app handles your data.">
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+    // English unless the reader's browser prefers Turkish or the URL says ?lang=tr / #tr.
+    (function () {
+      var q = (location.search.match(/lang=(\w+)/) || [])[1] || location.hash.slice(1);
+      var pick = q === 'tr' || q === 'en' ? q : ((navigator.language || '').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+      document.documentElement.lang = pick;
+    })();
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4fd8f5"/><stop offset="1" stop-color="#2f6bff"/></linearGradient></defs>
+        <rect width="64" height="64" rx="15" fill="#0b1a33"/>
+        <path d="M32 11c-7 9.5-14 17.6-14 25.5a14 14 0 0 0 28 0C46 28.6 39 20.5 32 11z" fill="url(#g)"/>
+        <path d="M25 38a7 7 0 0 0 7 7" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="brand-name">DripOut</div>
+        <div class="brand-sub">iPhone &amp; iPad</div>
+      </div>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="en">EN</button>
+      <button type="button" data-set="tr">TR</button>
+    </div>
+  </header>
+
+  <!-- ============================== ENGLISH ============================== -->
+  <article data-lang="en">
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective date: September 22, 2026</div>
+
+    <p>This policy explains what information the DripOut app (“the app”, “we”, “us”) collects, why, and the choices you have. DripOut is developed and published by Doğukan Kamçı, an individual developer, who is the data controller for the information described here.</p>
+
+    <div class="glance">
+      <div><b>No account</b>We never ask for your name, email address or phone number.</div>
+      <div><b>Microphone stays on device</b>Sound is measured live and never recorded or sent anywhere.</div>
+      <div><b>No ads in the app</b>We do not show advertising and we do not sell your data.</div>
+      <div><b>Tracking is your choice</b>The advertising identifier is only used if you allow it.</div>
+    </div>
+
+    <nav class="toc">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#en-collect">What we collect</a></li>
+        <li><a href="#en-device">What stays on your device</a></li>
+        <li><a href="#en-tracking">Tracking and the advertising identifier</a></li>
+        <li><a href="#en-providers">Service providers</a></li>
+        <li><a href="#en-legal">Why we may use it (legal bases)</a></li>
+        <li><a href="#en-retention">How long we keep it</a></li>
+        <li><a href="#en-rights">Your choices and rights</a></li>
+        <li><a href="#en-children">Children</a></li>
+        <li><a href="#en-changes">Changes and contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="en-collect">1. What we collect</h2>
+
+    <h3>Usage analytics</h3>
+    <p>Through Google Firebase Analytics the app sends information about how it is used, so we can see which features are helpful and where the app can be improved:</p>
+    <ul>
+      <li>Actions in the app, such as finishing the introduction screens, starting or finishing a cleaning (and whether it was the free demo or the full version), reaching the end of the free demo, using a tool (stereo test, frequency lab, tone generator, sound meter) and turning the cleaning reminder on or off, with the chosen interval.</li>
+      <li>Standard events recorded automatically, such as first launch, sessions, screens viewed and time spent in the app.</li>
+      <li>Technical details: device model, iOS version, app version, device language and approximate country or region (derived from your IP address; Google Analytics does not store the IP address itself).</li>
+      <li>A random identifier that Firebase creates for this installation of the app.</li>
+    </ul>
+    <p>This information is not linked to your name or any account, and we only look at it as totals.</p>
+
+    <h3>Crash reports</h3>
+    <p>If the app crashes, Firebase Crashlytics sends a crash report: where in the code the crash happened, the device model, iOS version, app version, free memory and disk space, and a random installation identifier. We use it only to find and fix bugs.</p>
+
+    <h3>Subscriptions and purchases</h3>
+    <p>Payments are handled entirely by Apple through your Apple Account. We never see or receive your payment card or billing details.</p>
+    <p>To check whether you have an active subscription and unlock the Pro features, the app uses Adapty. Adapty receives your App Store transactions and subscription status, a random user identifier that the app generates on first launch, basic device information (model, iOS version, app version, language and region) and your IP address. Adapty also records which subscription screen you saw, so we can understand which offers work.</p>
+
+    <h2 id="en-device">2. What stays on your device</h2>
+    <ul>
+      <li><b>Microphone.</b> The sound meter uses the microphone only while you have it open, to show the sound level around you. Audio is processed live on your device; it is never recorded, stored or transmitted. You can turn microphone access off at any time in iOS Settings.</li>
+      <li><b>Motion sensors.</b> The app reads how the device is tilted to animate the water on screen. These readings are used on the spot and never leave the device.</li>
+      <li><b>Reminders.</b> Cleaning reminders are scheduled as local notifications on your device. We do not operate a push notification server.</li>
+      <li><b>Settings and statistics.</b> Your preferences, cleaning history and reminder settings are stored only on your device.</li>
+      <li><b>Free demo flag.</b> To stop the free demo from being used again by reinstalling the app, the app saves a small marker in your device’s keychain once the demo has been used. It contains no personal information, never leaves the device and is not synced to iCloud, but it may remain on the device after the app is deleted.</li>
+    </ul>
+
+    <h2 id="en-tracking">3. Tracking and the advertising identifier</h2>
+    <p>When you first open the app, iOS may ask whether the app can track your activity. This is Apple’s App Tracking Transparency prompt.</p>
+    <ul>
+      <li><b>If you allow it,</b> your device’s advertising identifier (IDFA) may be shared with our service providers Adapty and Google. We use it only to measure which marketing campaigns lead people to install or subscribe to the app, if we promote the app with ads on other platforms.</li>
+      <li><b>If you decline,</b> the advertising identifier is never accessed, and the app works exactly the same.</li>
+    </ul>
+    <p>You can change this at any time in <i>Settings → Privacy &amp; Security → Tracking</i>. The app itself never shows advertising, and we do not sell or rent your personal information to anyone.</p>
+
+    <h2 id="en-providers">4. Service providers</h2>
+    <p>We share information only with the companies that run parts of the app for us, and only for the purposes above:</p>
+    <div class="card">
+      <table>
+        <thead><tr><th>Provider</th><th>What it does</th><th>Privacy policy</th></tr></thead>
+        <tbody>
+          <tr><td>Google Firebase Analytics</td><td>Usage analytics</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+          <tr><td>Google Firebase Crashlytics</td><td>Crash reports</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+          <tr><td>Adapty</td><td>Subscription management</td><td><a href="https://adapty.io/privacy/">adapty.io/privacy</a></td></tr>
+          <tr><td>Apple</td><td>Payments and App Store</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>These providers may process information on servers outside your country, including in the United States. Where required, such transfers are protected by safeguards such as the European Commission’s Standard Contractual Clauses. We may also disclose information if the law requires it.</p>
+
+    <h2 id="en-legal">5. Why we may use it (legal bases)</h2>
+    <p>If you are in the European Economic Area, the United Kingdom, Türkiye or another place with similar laws, we rely on:</p>
+    <ul>
+      <li><b>Performing our agreement with you</b> to provide the app and the subscription you bought (purchase and subscription data).</li>
+      <li><b>Our legitimate interests</b> in keeping the app working and improving it (analytics and crash reports), which we keep minimal and not linked to your identity.</li>
+      <li><b>Your consent</b> for the advertising identifier, given through the tracking prompt and withdrawable at any time.</li>
+    </ul>
+
+    <h2 id="en-retention">6. How long we keep it</h2>
+    <ul>
+      <li>Analytics data: user-level data is kept for no longer than 14 months, after which only aggregated totals remain.</li>
+      <li>Crash reports: about 90 days.</li>
+      <li>Subscription data: for as long as needed to provide your subscription and to meet legal, tax and accounting obligations.</li>
+      <li>Information on your device stays until you delete the app (except the free demo flag described above).</li>
+    </ul>
+
+    <h2 id="en-rights">7. Your choices and rights</h2>
+    <ul>
+      <li>Decline or turn off tracking in <i>Settings → Privacy &amp; Security → Tracking</i>.</li>
+      <li>Turn off microphone access or notifications in iOS Settings.</li>
+      <li>Deleting the app removes the random identifiers used for analytics; a new installation starts with new ones.</li>
+      <li>Manage or cancel your subscription in <i>Settings → [your name] → Subscriptions</i>.</li>
+    </ul>
+    <p>Depending on where you live, you may have the right to access, correct or delete your personal data, to object to or restrict its use, to data portability, and to withdraw consent. To make a request, contact us at the address below. Because we do not collect your name or email, we may need your help to identify the data that belongs to you (for example, the date of your purchase). You also have the right to complain to your local data protection authority; in Türkiye this is the Personal Data Protection Authority (KVKK).</p>
+
+    <h2 id="en-children">8. Children</h2>
+    <p>DripOut is a general utility and is not directed at children under 13 (or the minimum age in your country). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+
+    <h2 id="en-changes">9. Changes and contact</h2>
+    <p>If we change this policy, we will update the date at the top of this page, and for significant changes we will let you know in the app.</p>
+    <p>Questions or requests: <a class="contact" href="mailto:dripoutsupport@gmail.com">dripoutsupport@gmail.com</a></p>
+  </article>
+
+  <!-- ============================== TÜRKÇE ============================== -->
+  <article data-lang="tr">
+    <h1>Gizlilik Politikası</h1>
+    <div class="meta">Yürürlük tarihi: 22 Eylül 2026</div>
+
+    <p>Bu politika, DripOut uygulamasının (“uygulama”, “biz”) hangi bilgileri, neden topladığını ve sahip olduğunuz seçenekleri açıklar. DripOut, bireysel geliştirici Doğukan Kamçı tarafından geliştirilip yayınlanmaktadır; burada anlatılan veriler bakımından veri sorumlusu Doğukan Kamçı’dır.</p>
+
+    <div class="glance">
+      <div><b>Hesap yok</b>Adınızı, e-posta adresinizi veya telefon numaranızı asla istemeyiz.</div>
+      <div><b>Mikrofon cihazda kalır</b>Ses anlık ölçülür; asla kaydedilmez ve hiçbir yere gönderilmez.</div>
+      <div><b>Uygulamada reklam yok</b>Reklam göstermiyoruz ve verilerinizi satmıyoruz.</div>
+      <div><b>Takip sizin tercihiniz</b>Reklam kimliği yalnızca izin verirseniz kullanılır.</div>
+    </div>
+
+    <nav class="toc">
+      <strong>İçindekiler</strong>
+      <ol>
+        <li><a href="#tr-collect">Topladığımız bilgiler</a></li>
+        <li><a href="#tr-device">Cihazınızda kalanlar</a></li>
+        <li><a href="#tr-tracking">Takip ve reklam kimliği</a></li>
+        <li><a href="#tr-providers">Hizmet sağlayıcılar</a></li>
+        <li><a href="#tr-legal">Hukuki sebepler</a></li>
+        <li><a href="#tr-retention">Saklama süreleri</a></li>
+        <li><a href="#tr-rights">Seçenekleriniz ve haklarınız</a></li>
+        <li><a href="#tr-children">Çocuklar</a></li>
+        <li><a href="#tr-changes">Değişiklikler ve iletişim</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="tr-collect">1. Topladığımız bilgiler</h2>
+
+    <h3>Kullanım istatistikleri</h3>
+    <p>Uygulama, hangi özelliklerin işe yaradığını ve nerelerin geliştirilebileceğini görebilmemiz için Google Firebase Analytics aracılığıyla nasıl kullanıldığına dair bilgi gönderir:</p>
+    <ul>
+      <li>Uygulama içindeki işlemler: tanıtım ekranlarını bitirmek, bir temizliği başlatmak veya bitirmek (ücretsiz demo mu, tam sürüm mü olduğu dahil), ücretsiz demonun sonuna gelmek, bir aracı kullanmak (stereo test, frekans laboratuvarı, ton üretici, ses ölçer) ve temizlik hatırlatıcısını seçilen sıklıkla açmak veya kapatmak gibi.</li>
+      <li>Otomatik kaydedilen standart olaylar: ilk açılış, oturumlar, görüntülenen ekranlar ve uygulamada geçirilen süre gibi.</li>
+      <li>Teknik bilgiler: cihaz modeli, iOS sürümü, uygulama sürümü, cihaz dili ve yaklaşık ülke veya bölge (IP adresinden çıkarılır; Google Analytics IP adresinin kendisini saklamaz).</li>
+      <li>Firebase’in uygulamanın bu kurulumu için oluşturduğu rastgele bir kimlik.</li>
+    </ul>
+    <p>Bu bilgiler adınızla veya herhangi bir hesapla ilişkilendirilmez; biz bunları yalnızca toplam sayılar olarak inceleriz.</p>
+
+    <h3>Çökme raporları</h3>
+    <p>Uygulama çökerse Firebase Crashlytics bir çökme raporu gönderir: çökmenin kodda nerede olduğu, cihaz modeli, iOS sürümü, uygulama sürümü, boş bellek ve depolama alanı ile rastgele bir kurulum kimliği. Bu raporları yalnızca hataları bulup düzeltmek için kullanırız.</p>
+
+    <h3>Abonelikler ve satın almalar</h3>
+    <p>Ödemeler tamamen Apple tarafından, Apple Hesabınız üzerinden yapılır. Kart veya fatura bilgilerinizi hiçbir zaman görmeyiz ve almayız.</p>
+    <p>Aktif bir aboneliğiniz olup olmadığını kontrol etmek ve Pro özelliklerini açmak için uygulama Adapty’yi kullanır. Adapty’ye App Store işlemleriniz ve abonelik durumunuz, uygulamanın ilk açılışta oluşturduğu rastgele bir kullanıcı kimliği, temel cihaz bilgileri (model, iOS sürümü, uygulama sürümü, dil ve bölge) ve IP adresiniz iletilir. Adapty ayrıca hangi teklifin işe yaradığını anlayabilmemiz için hangi abonelik ekranını gördüğünüzü de kaydeder.</p>
+
+    <h2 id="tr-device">2. Cihazınızda kalanlar</h2>
+    <ul>
+      <li><b>Mikrofon.</b> Ses ölçer, mikrofonu yalnızca siz o ekranı açıkken, çevrenizdeki ses seviyesini göstermek için kullanır. Ses cihazınızda anlık işlenir; asla kaydedilmez, saklanmaz veya gönderilmez. Mikrofon erişimini istediğiniz zaman iOS Ayarlar’dan kapatabilirsiniz.</li>
+      <li><b>Hareket sensörleri.</b> Uygulama, ekrandaki suyu hareket ettirmek için cihazın eğimini okur. Bu veriler anında kullanılır ve cihazdan çıkmaz.</li>
+      <li><b>Hatırlatıcılar.</b> Temizlik hatırlatıcıları cihazınızda yerel bildirim olarak planlanır. Bir anlık bildirim (push) sunucusu işletmiyoruz.</li>
+      <li><b>Ayarlar ve istatistikler.</b> Tercihleriniz, temizlik geçmişiniz ve hatırlatıcı ayarlarınız yalnızca cihazınızda saklanır.</li>
+      <li><b>Ücretsiz demo işareti.</b> Ücretsiz demonun uygulama silinip yeniden yüklenerek tekrar kullanılmasını önlemek için, demo kullanıldığında uygulama cihazınızın anahtar zincirine (Keychain) küçük bir işaret kaydeder. Bu işaret kişisel bilgi içermez, cihazdan çıkmaz ve iCloud ile eşitlenmez; ancak uygulama silindikten sonra da cihazda kalabilir.</li>
+    </ul>
+
+    <h2 id="tr-tracking">3. Takip ve reklam kimliği</h2>
+    <p>Uygulamayı ilk açtığınızda iOS, uygulamanın etkinliğinizi takip edip edemeyeceğini sorabilir. Bu, Apple’ın Uygulama Takip Şeffaflığı (App Tracking Transparency) iznidir.</p>
+    <ul>
+      <li><b>İzin verirseniz,</b> cihazınızın reklam kimliği (IDFA) hizmet sağlayıcılarımız Adapty ve Google ile paylaşılabilir. Bunu yalnızca, uygulamayı başka platformlarda reklamla tanıtırsak hangi kampanyaların insanları uygulamayı yüklemeye veya abone olmaya yönlendirdiğini ölçmek için kullanırız.</li>
+      <li><b>İzin vermezseniz,</b> reklam kimliğine hiç erişilmez ve uygulama tamamen aynı şekilde çalışır.</li>
+    </ul>
+    <p>Bu tercihi istediğiniz zaman <i>Ayarlar → Gizlilik ve Güvenlik → Takip</i> bölümünden değiştirebilirsiniz. Uygulamanın kendisi hiçbir zaman reklam göstermez ve kişisel bilgilerinizi kimseye satmayız veya kiralamayız.</p>
+
+    <h2 id="tr-providers">4. Hizmet sağlayıcılar</h2>
+    <p>Bilgileri yalnızca uygulamanın bazı bölümlerini bizim için çalıştıran şirketlerle ve yalnızca yukarıdaki amaçlarla paylaşırız:</p>
+    <div class="card">
+      <table>
+        <thead><tr><th>Sağlayıcı</th><th>Ne yapar</th><th>Gizlilik politikası</th></tr></thead>
+        <tbody>
+          <tr><td>Google Firebase Analytics</td><td>Kullanım istatistikleri</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+          <tr><td>Google Firebase Crashlytics</td><td>Çökme raporları</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+          <tr><td>Adapty</td><td>Abonelik yönetimi</td><td><a href="https://adapty.io/privacy/">adapty.io/privacy</a></td></tr>
+          <tr><td>Apple</td><td>Ödemeler ve App Store</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Bu sağlayıcılar bilgileri, Amerika Birleşik Devletleri dahil olmak üzere yurt dışındaki sunucularda işleyebilir. Gerektiğinde bu aktarımlar standart sözleşme hükümleri gibi güvencelerle korunur. Kanunen zorunlu olduğunda bilgileri yetkili makamlarla da paylaşabiliriz.</p>
+
+    <h2 id="tr-legal">5. Hukuki sebepler</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) ve benzeri düzenlemeler kapsamında şu hukuki sebeplere dayanırız:</p>
+    <ul>
+      <li><b>Sözleşmenin ifası:</b> uygulamayı ve satın aldığınız aboneliği sunmak (satın alma ve abonelik verileri).</li>
+      <li><b>Meşru menfaat:</b> uygulamanın çalışmasını sürdürmek ve geliştirmek (kullanım istatistikleri ve çökme raporları). Bu verileri asgari düzeyde ve kimliğinizle ilişkilendirmeden tutarız.</li>
+      <li><b>Açık rıza:</b> reklam kimliği için; takip izniyle verilir ve istediğiniz zaman geri alınabilir.</li>
+    </ul>
+
+    <h2 id="tr-retention">6. Saklama süreleri</h2>
+    <ul>
+      <li>Kullanım istatistikleri: kullanıcı düzeyindeki veriler en fazla 14 ay saklanır; sonrasında yalnızca toplam sayılar kalır.</li>
+      <li>Çökme raporları: yaklaşık 90 gün.</li>
+      <li>Abonelik verileri: aboneliğinizi sunmak ve yasal, vergisel ve muhasebesel yükümlülükleri yerine getirmek için gerektiği sürece.</li>
+      <li>Cihazınızdaki bilgiler, uygulamayı silene kadar cihazınızda kalır (yukarıda anlatılan ücretsiz demo işareti hariç).</li>
+    </ul>
+
+    <h2 id="tr-rights">7. Seçenekleriniz ve haklarınız</h2>
+    <ul>
+      <li>Takibi <i>Ayarlar → Gizlilik ve Güvenlik → Takip</i> bölümünden reddedebilir veya kapatabilirsiniz.</li>
+      <li>Mikrofon erişimini veya bildirimleri iOS Ayarlar’dan kapatabilirsiniz.</li>
+      <li>Uygulamayı silmek, istatistikler için kullanılan rastgele kimlikleri de siler; yeni kurulum yeni kimliklerle başlar.</li>
+      <li>Aboneliğinizi <i>Ayarlar → [adınız] → Abonelikler</i> bölümünden yönetebilir veya iptal edebilirsiniz.</li>
+    </ul>
+    <p>KVKK’nın 11. maddesi ve bulunduğunuz yerdeki mevzuat kapsamında kişisel verilerinizin işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini isteme, işlenmesine itiraz etme ve verdiğiniz rızayı geri alma haklarına sahipsiniz. Talepleriniz için aşağıdaki adresten bize ulaşabilirsiniz. Adınızı veya e-postanızı toplamadığımız için size ait verileri bulabilmemiz adına yardımınıza ihtiyaç duyabiliriz (örneğin satın alma tarihiniz). Ayrıca Kişisel Verileri Koruma Kurulu’na veya bulunduğunuz ülkedeki veri koruma otoritesine şikâyette bulunma hakkınız vardır.</p>
+
+    <h2 id="tr-children">8. Çocuklar</h2>
+    <p>DripOut genel amaçlı bir araçtır ve 13 yaşın (veya ülkenizdeki asgari yaşın) altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamayız. Bir çocuğun bize kişisel bilgi verdiğini düşünüyorsanız lütfen bizimle iletişime geçin; bu bilgileri sileriz.</p>
+
+    <h2 id="tr-changes">9. Değişiklikler ve iletişim</h2>
+    <p>Bu politikayı değiştirirsek sayfanın başındaki tarihi güncelleriz; önemli değişiklikleri ayrıca uygulama içinde bildiririz.</p>
+    <p>Sorularınız ve talepleriniz için: <a class="contact" href="mailto:dripoutsupport@gmail.com">dripoutsupport@gmail.com</a></p>
+  </article>
+
+  <footer>© 2026 Doğukan Kamçı · DripOut · <a href="../terms/">Terms of Use / Kullanım Koşulları</a></footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    function show(lang) {
+      document.documentElement.lang = lang;
+      document.title = lang === 'tr' ? 'DripOut Gizlilik Politikası' : 'DripOut Privacy Policy';
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === lang ? 'true' : 'false'); });
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        show(b.dataset.set);
+        try { history.replaceState(null, '', '#' + b.dataset.set); } catch (_) {}
+      });
+    });
+    show(document.documentElement.lang);
+  })();
+</script>
+</body>
+</html>

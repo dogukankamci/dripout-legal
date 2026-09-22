@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DripOut — Legal</title>
+  <meta name="description" content="Privacy policy and terms of use for the DripOut iOS app.">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var q = (location.search.match(/lang=(\w+)/) || [])[1] || location.hash.slice(1);
+      var pick = q === 'tr' || q === 'en' ? q : ((navigator.language || '').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+      document.documentElement.lang = pick;
+    })();
+  </script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4fd8f5"/><stop offset="1" stop-color="#2f6bff"/></linearGradient></defs>
+        <rect width="64" height="64" rx="15" fill="#0b1a33"/>
+        <path d="M32 11c-7 9.5-14 17.6-14 25.5a14 14 0 0 0 28 0C46 28.6 39 20.5 32 11z" fill="url(#g)"/>
+        <path d="M25 38a7 7 0 0 0 7 7" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="brand-name">DripOut</div>
+        <div class="brand-sub">iPhone &amp; iPad</div>
+      </div>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="en">EN</button>
+      <button type="button" data-set="tr">TR</button>
+    </div>
+  </header>
+
+  <article data-lang="en">
+    <h1>Legal</h1>
+    <p class="meta">The documents that apply when you use DripOut.</p>
+    <div class="pick">
+      <a href="privacy/"><b>Privacy Policy</b><span>What the app collects, why, and the choices you have.</span></a>
+      <a href="terms/"><b>Terms of Use</b><span>Your licence, subscriptions, and what the app does not promise.</span></a>
+    </div>
+    <p style="margin-top:20px">Support: <a href="mailto:dripoutsupport@gmail.com">dripoutsupport@gmail.com</a></p>
+  </article>
+
+  <article data-lang="tr">
+    <h1>Yasal</h1>
+    <p class="meta">DripOut’u kullanırken geçerli olan belgeler.</p>
+    <div class="pick">
+      <a href="privacy/"><b>Gizlilik Politikası</b><span>Uygulamanın hangi bilgileri neden topladığı ve seçenekleriniz.</span></a>
+      <a href="terms/"><b>Kullanım Koşulları</b><span>Lisansınız, abonelikler ve uygulamanın vaat etmedikleri.</span></a>
+    </div>
+    <p style="margin-top:20px">Destek: <a href="mailto:dripoutsupport@gmail.com">dripoutsupport@gmail.com</a></p>
+  </article>
+
+  <footer>© 2026 Doğukan Kamçı · DripOut</footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    function show(lang) {
+      document.documentElement.lang = lang;
+      document.title = lang === 'tr' ? 'DripOut — Yasal' : 'DripOut — Legal';
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === lang ? 'true' : 'false'); });
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        show(b.dataset.set);
+        try { history.replaceState(null, '', '#' + b.dataset.set); } catch (_) {}
+      });
+    });
+    show(document.documentElement.lang);
+  })();
+</script>
+</body>
+</html>
